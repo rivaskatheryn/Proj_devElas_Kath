@@ -8,6 +8,8 @@ VAGAS = [
         "nivel": "Júnior",
         "modalidade": "Híbrido",
         "skills": ["Python", "Django", "Git"],
+        "descricao": "Você vai entrar no time que cuida do back-end da nossa plataforma de agendamentos, criando funcionalidades novas em Python e Django. Temos mentoria semanal para quem está começando.", 
+
     },
     {
         "id": 2,
@@ -18,6 +20,8 @@ VAGAS = [
         "nivel": "Júnior",
         "modalidade": "Remoto",
         "skills": ["HTML", "CSS", "JavaScript", "React"],
+        "descricao": "Apoie o time de dados organizando informações e montando relatórios com Python e SQL. Ideal para quem gosta de descobrir histórias escondidas nos números.", 
+
     },
     {
         "id": 3,
@@ -28,6 +32,8 @@ VAGAS = [
         "nivel": "Pleno",
         "modalidade": "Híbrido",
         "skills": ["Python", "SQL", "Power BI", "Excel"],
+        "descricao": "Construa telas bonitas e acessíveis para os sites dos nossos clientes, trabalhando lado a lado com o time de design.", 
+
     },
     {
         "id": 4,
@@ -38,6 +44,8 @@ VAGAS = [
         "nivel": "Sênior",
         "modalidade": "Remoto",
         "skills": ["JavaScript", "Node.js", "React", "MongoDB", "Git"],
+        "descricao": "Ajude as pessoas que usam nossos sistemas a resolver problemas de computadores e redes, e aprenda na prática o dia a dia de uma equipe de TI.", 
+
     },
     {
         "id": 5,
@@ -48,7 +56,7 @@ VAGAS = [
         "nivel": "Júnior",
         "modalidade": "Presencial",
         "skills": ["Java", "Spring Boot", "MySQL", "Git"],
-        },
+        "descricao": "Converse com quem usa nossos aplicativos, descubra o que pode melhorar e transforme essas descobertas em protótipos no Figma.",        },
 
         {
         "id": 6,
@@ -59,6 +67,7 @@ VAGAS = [
         "nivel": "Júnior",
         "modalidade": "Hibrido",
         "skills":["Python", "Django", "Git", "PostgreSQL", "Desarrollo y mantenimiento de aplicaciones web"],
+        "descricao": "Desarrollo y mantenimiento de aplicaciones web utilizando Python y Django."
             },
 
         {
@@ -71,6 +80,7 @@ VAGAS = [
         "nivel": "Pleno",
         "modalidade": "Remoto",
         "skills":["Python","Django REST Framework","FastAPI","PostgreSQL","Docker","Git y GitHub", "Integración de APIs REST","Documentación y pruebas de servicios web"],
+        "descricao": "Desarrollo e integración de APIs REST utilizando Python, FastAPI y Django REST Framework.."
             },
 
  {
@@ -82,7 +92,8 @@ VAGAS = [
         "nivel": "Pleno",
         "modalidade": "Híbrido",
         "skills": ["Python", "Django", "MySQL", "JavaScript", "HTML y CSS", "Git", "Análisis de requisitos", "Mantenimiento y optimización de sistemas empresariales"],
-    },
+        "descricao": "Análisis, desarrollo y mantenimiento de sistemas para optimizar procesos empresariales."
+             },
 ]
 
 for vaga in VAGAS: 
