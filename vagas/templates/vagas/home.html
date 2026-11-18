@@ -1,19 +1,219 @@
 <!DOCTYPE html> 
+
 <html lang="pt-br"> 
+
 <head> 
-    <meta charset="utf-8"> 
-    <title>DevElas</title> 
+
+   <title>DevElas</title> 
+   <p class="lead">Conectando mulheres às melhores oportunidades em tecnologia.</p>
+
+  <meta charset="utf-8"> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+  <link rel="stylesheet" 
+
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"> 
+
+  <style> 
+
+    :root { 
+
+      --cor-principal:#553C75; 
+
+      --cor-destaque:#D98BB8; 
+
+    } 
+
+    .bg-develas, .badge-develas { background-color: var(--cor-principal); } 
+
+    .text-develas { color: var(--cor-principal); } 
+
+    .borda-destaque { border-top: 4px solid var(--cor-destaque) !important; } 
+
+    .navbar .nav-link { color: rgba(255, 255, 255, 0.85); } 
+
+    .navbar .nav-link.active { font-weight: 600; } 
+
+    .btn-develas, .btn-develas:hover, .btn-develas:disabled, 
+
+    .btn-borda:hover, .btn-borda.active { 
+
+      background-color: var(--cor-principal); 
+
+      border-color: var(--cor-principal); 
+
+      color: #fff; 
+
+    } 
+
+    .btn-develas:hover { filter: brightness(0.85); } 
+
+    .btn-borda { 
+
+      color: var(--cor-principal); 
+
+      border-color: var(--cor-principal); 
+
+    } 
+
+  </style> 
+
 </head> 
-<body> 
-    <h1>DevElas</h1> 
-    <p>Vagas de tecnologia feitas para mulheres.</p> 
-    <h2>Vagas que queremos ver por aqui</h2> 
-<ul> 
-    <li>Desenvolvedora Python Júnior</li> 
-    <li>Estágio em Análise de Dados</li> 
-    <li>Desenvolvedora Front-end Júnior</li> 
-</ul> 
- <p>{{ total }} vagas abertas agora no mural.</p>
-<a href="{% url 'mural' %}">Ver vagas</a> 
+
+<body class="d-flex flex-column min-vh-100 bg-light"> 
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-develas"> 
+
+    <div class="container"> 
+
+      <a class="navbar-brand fw-bold" href="{% url 'home' %}">DevElas</a> 
+
+      <button class="navbar-toggler" type="button" aria-label="Abrir menu" 
+
+              data-bs-toggle="collapse" data-bs-target="#menu"> 
+
+        <span class="navbar-toggler-icon"></span> 
+
+      </button> 
+
+      <div class="collapse navbar-collapse" id="menu"> 
+
+        <ul class="navbar-nav ms-auto"> 
+
+          <li class="nav-item"> 
+
+            <a class="nav-link active" href="{% url 'home' %}">Início</a> 
+
+          </li> 
+
+          <li class="nav-item"> 
+
+            <a class="nav-link" href="{% url 'mural' %}">Vagas</a> 
+
+          </li> 
+
+        </ul> 
+
+      </div> 
+
+    </div> 
+
+  </nav> 
+
+ 
+
+  <main class="flex-grow-1"> 
+
+    <section class="bg-white border-bottom"> 
+
+      <div class="container py-5"> 
+
+        <h1 class="display-4 fw-bold text-develas">DevElas</h1> 
+
+        <p class="lead">Vagas de tecnologia feitas para mulheres.</p> 
+
+        <p class="text-muted">{{ total }} vagas abertas agora no mural.</p> 
+
+        <a class="btn btn-develas btn-lg" href="{% url 'mural' %}">Ver vagas</a> 
+
+      </div> 
+
+    </section> 
+
+ 
+
+    <section class="container py-5"> 
+
+      <h2 class="h4 mb-4">Por que a DevElas?</h2> 
+
+      <div class="row g-4"> 
+
+        <div class="col-md-4"> 
+
+          <div class="card h-100 border-0 shadow-sm borda-destaque"> 
+
+            <div class="card-body"> 
+
+              <h3 class="h5 text-develas">Oportunidades para crescer</h3> 
+
+              <p class="card-text"> 
+
+                Encontre vagas na tecnologia que combinam com seu perfil e seus objetivos profissionais.
+
+              </p> 
+
+            </div> 
+
+          </div> 
+
+        </div> 
+
+        <div class="col-md-4"> 
+
+          <div class="card h-100 border-0 shadow-sm borda-destaque"> 
+
+            <div class="card-body"> 
+
+              <h3 class="h5 text-develas">Sua carreira, suas escolhas</h3> 
+
+              <p class="card-text"> 
+
+               Explore oportunidades remotas, híbridas ou presenciais e escolha o caminho ideal para você.
+              </p> 
+
+            </div> 
+
+          </div> 
+
+        </div> 
+
+        <div class="col-md-4"> 
+
+          <div class="card h-100 border-0 shadow-sm borda-destaque"> 
+
+            <div class="card-body"> 
+
+              <h3 class="h5 text-develas">Tecnologia com propósito</h3> 
+
+              <p class="card-text"> 
+
+                Um espaço criado para conectar mulheres, compartilhar oportunidades e transformar carreiras.
+
+              </p> 
+
+            </div> 
+
+          </div> 
+
+        </div> 
+
+      </div> 
+
+    </section> 
+
+  </main> 
+
+ 
+
+  <footer class="bg-develas text-white py-4 mt-auto"> 
+
+    <div class="container small"> 
+
+      DevElas · Feito com Python e Django por Seu Nome 
+
+    </div> 
+
+  </footer> 
+
+ 
+
+  <script 
+
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"> 
+
+  </script> 
+
 </body> 
+
 </html> 
